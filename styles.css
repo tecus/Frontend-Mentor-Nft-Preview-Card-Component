@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root{
+	--Soft_blue: hsl(215, 51%, 70%);
+  --Cyan: hsla(178, 100%, 50%, 0.5);
+  --Very_dark_blueM /*(main BG)*/: hsl(217, 54%, 11%);
+  --Very_dark_blueC /*(card BG)*/: hsl(216, 50%, 16%);
+  --Very_dark_blueL /*(line)*/: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	font-family: 'Outfit', sans-serif;
+	background-color:  var(--Very_dark_blueM);
+	font-size: 18px;
+}
+.main-container{
+	background-color: var(--Very_dark_blueC);
+	box-sizing: border-box;
+	border-radius: 14px;
+	width: 330px;
+	height: 546px;
+	margin: 60px auto;
+	padding: 24px 25px 26px 26px;
+}
+.image-container{
+	background-image: url(images/image-equilibrium.jpg);
+	background-size: cover;
+	border-radius: 6px;
+	width: 280px;
+	height: 280px;
+	margin: 0 auto 26px;
+	overflow: hidden;
+}
+.image{
+	background-color: var(--Cyan);
+	background-image: url(images/icon-view.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+.image:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+.title{
+	color: var(--White);
+	font-size: 1.3em;
+	margin-bottom: 10px;
+}
+.description{
+	color: var(--Soft_blue);
+	font-weight: 300;
+	font-size: 0.9em;
+	line-height: 25px;
+	margin-bottom: 16px;
+}
+.details-container{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+	font-size: 0.9em;
+}
+.image-value{
+	height: 20px;
+}
+.value{
+	display: flex;
+	color: var(--Cyan);
+	font-weight: 700;
+	gap: 7px;
+}
+.time{
+	color: var(--Soft_blue);
+}
+.days{
+
+}
+.line{
+	border-top: 1px solid var(--Soft_blue);
+	margin-bottom: 15px;
+}
+.creator-container{
+	display: flex;
+	align-items: center;
+}
+.photo{
+	background-image: url(images/image-avatar.png);
+	background-size: cover;
+	border: 1px solid var(--White);
+	border-radius: 50%;
+	width: 33px;
+	height: 33px;
+}
+.creator{
+	color: var(--Soft_blue);
+	font-size: 0.85em;
+	margin-left: 15px;
+}
+.title-creator{
+  color: var(--White);
+}
+.title-creator:hover{
+	color: var(--Cyan);
+	cursor: pointer;
+
+}
+.attribution { 
+	font-size: 11px; 
+	text-align: center;
+}
+.attribution a { 
+	color: hsl(228, 45%, 44%);
+}
+@media (min-width:900px) {
+	.main-container{
+		width: 354px;
+		height: 595px;
+		margin: 155px auto;
+	}
+	.image-container{
+		width: 303px;
+		height: 301px;
+	}
+	.description{
+		font-size: 1em;
+		margin-bottom: 25px;
+		line-height: 27px;
+	}
+	.details-container{
+    margin-bottom: 22px;
+	}
+}s
